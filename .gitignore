@@ -1,16 +1,23 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# ───────────────────────────────
+# Dependencies
+# ───────────────────────────────
 node_modules/
+**/node_modules/
 
+# ───────────────────────────────
 # Expo
+# ───────────────────────────────
 .expo/
 .expo-shared/
 dist/
 web-build/
 expo-env.d.ts
 
+# ───────────────────────────────
 # Native
+# ───────────────────────────────
 .kotlin/
 *.orig.*
 *.jks
@@ -19,63 +26,115 @@ expo-env.d.ts
 *.key
 *.mobileprovision
 
+# ───────────────────────────────
 # Metro
+# ───────────────────────────────
 .metro-health-check*
 
+# ───────────────────────────────
 # Debug logs
+# ───────────────────────────────
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 pnpm-debug.*
 *.log
 
+# ───────────────────────────────
 # macOS
+# ───────────────────────────────
 .DS_Store
 *.pem
 
+# ───────────────────────────────
 # Windows
+# ───────────────────────────────
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 
+# ───────────────────────────────
 # Linux editor backups
+# ───────────────────────────────
 *~
 
+# ───────────────────────────────
 # Local env files
+# ───────────────────────────────
 .env
 .env*.local
 
+# ───────────────────────────────
 # TypeScript
+# ───────────────────────────────
 *.tsbuildinfo
 
+# ───────────────────────────────
 # Example app
+# ───────────────────────────────
 app-example
 
+# ───────────────────────────────
 # Generated native folders
+# ───────────────────────────────
 /ios
 /android
 
-# Sandbox caches
+# ───────────────────────────────
+# Sandbox & system caches
+# ───────────────────────────────
 .bun/
 .cache/
 .config/
 .local/
 .npm/
+**/.npm/
+**/.cache/
+**/.local/
+**/.bun/
 
+# ───────────────────────────────
 # Package manager caches
+# ───────────────────────────────
 .pnpm-store/
 .yarn/
 .yarn/cache/
+**/.pnpm-store/
+**/.yarn/
+**/.yarn/cache/
 
-# Editors/IDEs
+# ───────────────────────────────
+# Editors / IDEs
+# ───────────────────────────────
 .vscode/
 .idea/
 *.swp
 *.swo
 
+# ───────────────────────────────
 # Test coverage
+# ───────────────────────────────
 coverage/
 
+# ───────────────────────────────
 # Misc caches
+# ───────────────────────────────
 .eslintcache
 .parcel-cache/
+**/.parcel-cache/
+
+# ───────────────────────────────
+# Build & output directories
+# ───────────────────────────────
+build/
+out/
+tmp/
+temp/
+
+# ───────────────────────────────
+# Python / other language caches (in case mixed project)
+# ───────────────────────────────
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
