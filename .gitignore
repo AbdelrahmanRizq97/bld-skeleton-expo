@@ -5,6 +5,7 @@ node_modules/
 
 # Expo
 .expo/
+.expo-shared/
 dist/
 web-build/
 expo-env.d.ts
@@ -21,25 +22,60 @@ expo-env.d.ts
 # Metro
 .metro-health-check*
 
-# debug
+# Debug logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+pnpm-debug.*
+*.log
 
 # macOS
 .DS_Store
 *.pem
 
-# local env files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux editor backups
+*~
+
+# Local env files
+.env
 .env*.local
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 
+# Example app
 app-example
 
-# generated native folders
+# Generated native folders
 /ios
 /android
 
-.env
+# Sandbox caches
+.bun/
+.cache/
+.config/
+.local/
+.npm/
+
+# Package manager caches
+.pnpm-store/
+.yarn/
+.yarn/cache/
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test coverage
+coverage/
+
+# Misc caches
+.eslintcache
+.parcel-cache/
