@@ -132,7 +132,7 @@ tmp/
 temp/
 
 # ───────────────────────────────
-# Python / other language caches (in case mixed project)
+# Python
 # ───────────────────────────────
 __pycache__/
 *.py[cod]
